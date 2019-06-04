@@ -195,6 +195,7 @@ fn_rm_file() {
 }
 
 fn_rm_dir() {
+        fn_run_cmd "chmod -R +w '$1'"
 	fn_run_cmd "rm -rf -- '$1'"
 }
 
